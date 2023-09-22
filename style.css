@@ -80,6 +80,65 @@ footer {
   padding-bottom: 0.5rem;
 }
 
+.recipe-of-month-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.recipe-of-month-hero1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 15px;
+  padding: 15px;
+}
+
+.leftPart {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 15px;
+}
+.leftPart div {
+  padding: 15px;
+  border: 1px solid black;
+  box-shadow: 3px 6px 10px gray, -3px 6px 10px gray;
+}
+.leftPart .ingredients {
+  min-width: 270px;
+}
+
+.rightPart {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.rightPart img {
+  padding: 25px;
+  border: 1px solid black;
+  width: 100%;
+  min-width: 320px;
+  box-shadow: 3px 6px 10px gray, -3px 6px 10px gray;
+}
+
+li {
+  font-size: 14px;
+}
+
+.primaryList > li {
+  margin-left: 16px;
+}
+
+.secondaryList > li {
+  margin-left: 32px;
+}
+
 body {
   background-color: white;
   font-family: "Nunito", Arial, Helvetica, sans-serif;
