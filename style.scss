@@ -25,5 +25,29 @@ hr {
 }
 
 .recipesContainer {
-    height: 30rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    outline: 1px solid red;
+    margin: 1rem 3rem;
+    gap: 1rem;
+}
+
+.imageContainer {
+    position: relative;
+    outline: 1px solid red;
+    img {
+        width: 100%;
+        aspect-ratio: 1.333;
+        
+    }
+    .overlayText {
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        background-color: $primary-color;
+        opacity: 70%;
+        color: $secondary-color;
+        text-align: center;
+        padding: 1rem 0rem;
+    }
 }

@@ -90,5 +90,28 @@ hr {
 }
 
 .recipesContainer {
-  height: 30rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  outline: 1px solid red;
+  margin: 1rem 3rem;
+  gap: 1rem;
+}
+
+.imageContainer {
+  position: relative;
+  outline: 1px solid red;
+}
+.imageContainer img {
+  width: 100%;
+  aspect-ratio: 1.333;
+}
+.imageContainer .overlayText {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  background-color: black;
+  opacity: 70%;
+  color: white;
+  text-align: center;
+  padding: 1rem 0rem;
 }/*# sourceMappingURL=style.css.map */
