@@ -7,6 +7,11 @@ body {
     background-color: $secondary-color;
     font-family: $primary-font;
 }
+
+hr {
+    border: 1px solid $primary-color
+}
+
 #mainHeader {
     display: flex;
     flex-direction: row;
