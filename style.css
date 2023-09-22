@@ -120,6 +120,7 @@ hr {
   position: relative;
   height: 200px;
   overflow: hidden;
+  box-shadow: 3px 6px 10px gray, -3px 6px 10px gray;
 }
 .imageContainer img {
   position: absolute;

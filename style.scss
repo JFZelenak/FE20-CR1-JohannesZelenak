@@ -59,6 +59,7 @@ hr {
     position: relative;
     height: 200px;
     overflow: hidden;
+    box-shadow: 3px 6px 10px $shadow-color, -3px 6px 10px $shadow-color;
     // outline: 1px solid red;
     img {
         position: absolute;
