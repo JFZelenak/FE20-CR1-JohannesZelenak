@@ -31,6 +31,42 @@ header {
   margin: 0rem 0.5rem;
 }
 
+footer {
+  background-color: black;
+  color: white;
+}
+
+#footerNavbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0.5rem 0rem;
+}
+#footerNavbar a {
+  text-decoration: none;
+}
+#footerNavbar a, #footerNavbar span {
+  color: white;
+  margin: 0rem 1rem;
+}
+
+#socialMedia {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 0.5rem;
+}
+#socialMedia svg {
+  margin: 0rem 1rem;
+}
+
+#copyright {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 0.5rem;
+}
+
 body {
   background-color: white;
   font-family: "Nunito", Arial, Helvetica, sans-serif;

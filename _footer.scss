@@ -2,4 +2,39 @@
 
 footer {
     background-color: $primary-color;
+    color: $secondary-color;
+}
+
+#footerNavbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0.5rem 0rem;
+
+    a {
+        text-decoration: none;
+    }
+
+    a, span {
+        color: $secondary-color;
+        margin: 0rem 1rem;
+    }
+}
+
+#socialMedia {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 0.5rem;
+
+    svg {
+        margin: 0rem 1rem;
+    }
+}
+
+#copyright {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 0.5rem;
 }
