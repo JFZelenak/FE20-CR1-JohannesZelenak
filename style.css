@@ -89,42 +89,68 @@ footer {
 }
 
 .recipe-of-month-hero1 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-end;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
   gap: 15px;
   padding: 15px;
   max-width: 1007px;
 }
+.recipe-of-month-hero1 .title, .recipe-of-month-hero1 .ingredients {
+  padding: 15px;
+  border: 1px solid black;
+  box-shadow: 3px 6px 10px gray, -3px 6px 10px gray;
+}
+.recipe-of-month-hero1 .ingredients {
+  min-width: 270px;
+}
+.recipe-of-month-hero1 .image {
+  grid-row: span 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  min-width: 320px;
+}
+.recipe-of-month-hero1 .image img {
+  width: 100%;
+  padding: 25px;
+  border: 1px solid black;
+  box-shadow: 3px 6px 10px gray, -3px 6px 10px gray;
+}
 
-.leftPart {
+@media screen and (width < 640px) {
+  .recipe-of-month-hero1 {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .recipe-of-month-hero1 .image {
+    grid-row: span 1;
+  }
+}
+.recipe-of-month-hero2 {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  padding: 15px;
+  max-width: 1007px;
+}
+.recipe-of-month-hero2 .preparation {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   gap: 15px;
 }
-.leftPart div {
+.recipe-of-month-hero2 .preparation .preparationList {
+  width: 100%;
   padding: 15px;
   border: 1px solid black;
   box-shadow: 3px 6px 10px gray, -3px 6px 10px gray;
 }
-.leftPart .ingredients {
-  min-width: 270px;
-}
-
-.rightPart {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-end;
-}
-.rightPart img {
-  padding: 25px;
-  border: 1px solid black;
+.recipe-of-month-hero2 .preparation .preparationInstruction {
   width: 100%;
-  min-width: 320px;
+  padding: 15px;
+  border: 1px solid black;
   box-shadow: 3px 6px 10px gray, -3px 6px 10px gray;
 }
 
@@ -138,10 +164,6 @@ li {
 
 .secondaryList > li {
   margin-left: 32px;
-}
-
-.preparationList {
-  width: 100%;
 }
 
 ol > li {

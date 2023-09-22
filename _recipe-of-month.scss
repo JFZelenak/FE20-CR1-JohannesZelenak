@@ -9,23 +9,13 @@
 }
 
 .recipe-of-month-hero1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-end;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
     gap: 15px;
     padding: 15px;
     max-width: 1007px;
-}
 
-.leftPart {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 15px;
-
-    div {
+    .title, .ingredients {
         padding: 15px;
         border: 1px solid $primary-color;
         box-shadow: 3px 6px 10px $shadow-color, -3px 6px 10px $shadow-color;
@@ -34,20 +24,61 @@
     .ingredients {
         min-width: 270px;
     }
+
+    .image {
+        grid-row: span 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        min-width: 320px;
+        
+        img {
+            width: 100%;
+            padding: 25px;
+            border: 1px solid $primary-color;
+            box-shadow: 3px 6px 10px $shadow-color, -3px 6px 10px $shadow-color;
+        }
+    }
 }
 
-.rightPart {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
+@media screen and (width < 640px) {
+    .recipe-of-month-hero1 {
+        display: grid;
+        grid-template-columns: 1fr;
+        .image {
+            grid-row: span 1;
+        }
+    }
+}
 
-    img {
-        padding: 25px;
-        border: 1px solid $primary-color;
-        width: 100%;
-        min-width: 320px;
-        box-shadow: 3px 6px 10px $shadow-color, -3px 6px 10px $shadow-color;
+.recipe-of-month-hero2 {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    padding: 15px;
+    max-width: 1007px;
+
+    .preparation {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 15px;
+    
+        .preparationList {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid $primary-color;
+            box-shadow: 3px 6px 10px $shadow-color, -3px 6px 10px $shadow-color;
+        }
+    
+        .preparationInstruction {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid $primary-color;
+            box-shadow: 3px 6px 10px $shadow-color, -3px 6px 10px $shadow-color;
+        }
     }
 }
 
@@ -61,10 +92,6 @@ li {
 
 .secondaryList > li {
     margin-left: 32px;
-}
-
-.preparationList {
-    width: 100%;
 }
 
 ol > li {
