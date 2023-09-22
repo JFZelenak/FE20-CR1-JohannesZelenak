@@ -27,14 +27,14 @@ hr {
 .recipesContainer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    outline: 1px solid red;
+    // outline: 1px solid red;
     margin: 1rem 3rem;
     gap: 1rem;
 }
 
 .imageContainer {
     position: relative;
-    outline: 1px solid red;
+    // outline: 1px solid red;
     img {
         width: 100%;
         aspect-ratio: 1.333;
