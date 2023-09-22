@@ -1,3 +1,19 @@
 @use "reset";
 @use "header";
 @use "variables" as *;
+
+body {
+    background-color: $secondary-color;
+    font-family: $primary-font;
+}
+#mainHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    p {
+        margin: 0.5rem 0rem;
+        font-size: 18px;
+    }
+    
+}
