@@ -15,12 +15,14 @@ footer {
     padding: 0.5rem 0rem;
 
     a {
+        border-left: 1px solid $secondary-color;
+        padding: 0px 5vw;
         text-decoration: none;
-    }
-
-    a, span {
         color: $secondary-color;
-        margin: 0rem 1rem;
+        // margin: 0rem 0.75rem;
+    }
+    #firstLink {
+        border-left: 0px solid $secondary-color;
     }
 }
 
@@ -31,7 +33,7 @@ footer {
     padding-bottom: 0.5rem;
 
     svg {
-        margin: 0rem 1rem;
+        margin: 0rem 2vw;
     }
 }
 
