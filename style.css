@@ -84,7 +84,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
   gap: 15px;
 }
 
@@ -95,6 +95,7 @@ footer {
   align-items: flex-end;
   gap: 15px;
   padding: 15px;
+  max-width: 1007px;
 }
 
 .leftPart {
@@ -137,6 +138,18 @@ li {
 
 .secondaryList > li {
   margin-left: 32px;
+}
+
+.preparationList {
+  width: 100%;
+}
+
+ol > li {
+  margin-left: 25px;
+}
+
+i {
+  font-size: 12px;
 }
 
 body {
