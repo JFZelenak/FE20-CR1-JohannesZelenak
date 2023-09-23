@@ -233,6 +233,9 @@ main {
   margin-top: 70px;
   margin-bottom: 114px;
 }
+main a {
+  text-decoration: none;
+}
 
 #mainHeader {
   display: flex;
