@@ -1,19 +1,18 @@
 @use "variables" as *;
 
-.container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 25px;
-    gap: 25px;
-    width: 80%;
-    margin: 0 auto;
+.container-flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
 
     .card0 {
-        grid-area: 1/1/4/2;
+        min-width: 250px;
+        max-width: 400px;
         img {
             width: 100%;
-        } 
-        max-width: 400px;
+        }
     }
 
     span {
@@ -22,48 +21,29 @@
     }
 
     .card1, .card2, .card3 {
+        @extend .card0;
         border-radius: 15px;
         padding: 15px;
-        margin: 1rem 0rem;
         border: 1px solid $primary-color;
         box-shadow: 3px 6px 10px $shadow-color, -3px 6px 10px $shadow-color;
     }
-    .card1 {
-        grid-area: 1/2/2/3;
-    }
-    .card2 {
-        grid-area: 2/2/3/3;
-    }
-    .card3 {
-        grid-area: 3/2/4/3;
-    }
+}
+
+.container-flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
 }
 
 a {
     color: $primary-color;
 }
 
-@media screen and (width < 740px) {
-    .container {
-        grid-template-columns: 1fr;
-
-        .card0, .card1, .card2, .card3 {
-            max-width: 400px;
-            margin: 0px auto;
-        }
-
-        .card0 {
-            grid-area: 1/1/1/2;
-        }
-        .card1 {
-            grid-area: 2/1/2/2;
-        }
-        .card2 {
-            grid-area: 3/1/3/2;
-        }
-        .card3 {
-            grid-area: 4/1/4/2;
-        }
+@media screen and (width < 580px) {
+    .container-flex-row {
+        flex-direction: column;
+        align-items: center;
     }
-    
 }
